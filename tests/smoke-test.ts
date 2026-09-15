@@ -13,7 +13,7 @@ import { writeFileSync } from 'node:fs';
 
 // The package exports the client class. The client reads auth and the base URL from the
 // environment, so it needs no constructor options to point at a server.
-import DemoAPIScalarGalaxy from '@official-galaxy-testing/demo-api-scalar-galaxy';
+import DemoAPIScalarGalaxy from '@amritk/galaxy-staging';
 
 // One shared client runs every case.
 const client = new DemoAPIScalarGalaxy();

@@ -21,7 +21,7 @@ Complete reference of every operation, grouped by resource. See [the README](./R
 ## Setup
 
 ```ts
-import DemoAPIScalarGalaxy from '@official-galaxy-testing/demo-api-scalar-galaxy';
+import DemoAPIScalarGalaxy from '@amritk/galaxy-staging';
 
 const client = new DemoAPIScalarGalaxy({
   bearerAuth: process.env['BEARER_AUTH'], // defaults to the BEARER_AUTH env var

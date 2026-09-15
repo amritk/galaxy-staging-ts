@@ -25,7 +25,7 @@ The full API of this library can be found in [api.md](./api.md).
 ## Installation
 
 ```sh
-npm install @official-galaxy-testing/demo-api-scalar-galaxy
+npm install @amritk/galaxy-staging
 ```
 
 <br />
@@ -33,7 +33,7 @@ npm install @official-galaxy-testing/demo-api-scalar-galaxy
 ## Usage
 
 ```ts
-import DemoAPIScalarGalaxy from '@official-galaxy-testing/demo-api-scalar-galaxy';
+import DemoAPIScalarGalaxy from '@amritk/galaxy-staging';
 
 const client = new DemoAPIScalarGalaxy({
   bearerAuth: process.env['BEARER_AUTH'], // defaults to the BEARER_AUTH env var
@@ -86,7 +86,7 @@ Declared schemes:
 Non-success responses throw generated API errors. Error objects expose status, headers, response body, and request metadata where the target runtime supports it.
 
 ```ts
-import { APIError } from '@official-galaxy-testing/demo-api-scalar-galaxy';
+import { APIError } from '@amritk/galaxy-staging';
 
 try {
   const planet = await client.planets.list({
@@ -110,7 +110,7 @@ Documented error statuses: `400`, `401`, `403`, `404`, `409`, `422`.
 Configure the generated client by setting any of these options when you create it.
 
 ```ts
-import DemoAPIScalarGalaxy from '@official-galaxy-testing/demo-api-scalar-galaxy';
+import DemoAPIScalarGalaxy from '@amritk/galaxy-staging';
 
 const client = new DemoAPIScalarGalaxy({
   timeout: 60000,
